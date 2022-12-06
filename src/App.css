@@ -1,0 +1,54 @@
+.app {
+    background-color: black;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.video-app {
+    height: 100vh;
+    position: relative;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    width: 100%;
+    border-radius: 30px;
+}
+
+
+@media (min-width: 455px) {
+    .video-app {
+      width: 90%;
+    }
+  }
+
+@media (min-width: 768px) {
+    .video-app {
+      width: 60%
+    }
+  }
+  
+  /* medium */
+  
+  @media (min-width: 992px) {
+    .video-app {
+        width: 50%
+      }
+  }
+  
+  /* large */
+  
+  @media (min-width: 1200px) {
+    .video-app {
+        width: 40%;
+      }
+    }
+
+
+.video-app::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+
